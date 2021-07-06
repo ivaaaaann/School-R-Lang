@@ -92,7 +92,45 @@ list5
 #[[3]]
 #[[3]][[1]]
 #[1] TRUE TRUE FALSE TRUE
-list5 <- list(리스트1 = a, 리스트2 = b, list(,c(TRUE, TRUE, FALSE, TRUE)))
+
+list5[[3]] <- list(c(TRUE, TRUE, FALSE, TRUE))
+list5
+
+#================================================================
+
+# 4.리스트에서 제거
+list5[[3]]<- NULL
+list5
+
+# 5. 리스트에서 요소 추출
+list5[[1]]
+
+list5[[1]][1]
+
+# 6. 리스트 요소 추가
+list5[[1]]
+
+list5[[1]][15] <- 15
+list5
+
+# 7. 리스트의 요소 제거
+list5[[1]] < list5[[1]][-15]
+list5[[1]] <- list5[[1]][-c(11:14)]
+list5
+
+list5$리스트1
+list5$리스트1[1]
+list5$리스트1[c(2:5)]
+
+list5$리스트2[2]
+
+list5
+
+
+
+
+
+
 
 
 
